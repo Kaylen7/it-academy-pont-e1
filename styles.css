@@ -37,6 +37,16 @@ header {
 .header-top * {
     background-color: white;
     padding: 0.75em;
+
+    &.grow {
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.10);
+            cursor: pointer;
+            background-color: green;
+        }
+    }
 }
 
 .header-banner {
